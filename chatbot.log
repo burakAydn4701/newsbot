@@ -1,0 +1,78 @@
+2026-03-18 14:11:42,363 INFO Load pretrained SentenceTransformer: intfloat/multilingual-e5-base
+2026-03-18 14:11:47,225 INFO [INTENT] gundem | Question: Bugünkü önemli haberler neler?
+2026-03-18 14:11:47,225 INFO [SEARCH] intent=gundem query=''
+2026-03-18 14:11:47,251 INFO [SEARCH] gundem: id=19667365 onem_rank=14 date=2026-03-18 04:36:01.373000 title="Savaşta 19. gün! İran'ın Laricani intikamı kanlı oldu, İsrail ülkenin başkentine bomba yağdırdı"
+2026-03-18 14:11:47,251 INFO [SEARCH] gundem: id=19667961 onem_rank=12 date=2026-03-18 11:21:30.417000 title='Dünyayı korkutan petrol krizine Türkiye nefes oldu! Vanalar açıldı'
+2026-03-18 14:11:47,251 INFO [SEARCH] gundem: id=19667936 onem_rank=12 date=2026-03-18 11:15:42.300000 title="İmamoğlu'nun günlerdir tartıştığı hakimden bir isteği var: Tarihe geçersiniz"
+2026-03-18 14:11:47,961 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-18 14:12:04,209 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-18 14:12:04,219 INFO [INTENT] vector | Question: Ekonomide son gelişmeler
+2026-03-18 14:12:04,219 INFO [SEARCH] intent=vector query='Ekonomide son gelişmeler'
+2026-03-18 14:12:05,118 INFO [SEARCH] vector: id=19645542 url=https://www.haberler.com/guncel/gundem-11-mart-2026-19645542-haberi/ title='GÜNDEM / 11 Mart 2026'
+2026-03-18 14:12:05,118 INFO [SEARCH] vector: id=19649207 url=https://www.haberler.com/guncel/gundem-12-mart-2026-19649207-haberi/ title='GÜNDEM / 12 Mart 2026'
+2026-03-18 14:12:05,118 INFO [SEARCH] vector: id=19652880 url=https://www.haberler.com/ekonomi/jeopolitik-gerilim-ve-petrol-fiyatlari-kuresel-19652880-haberi/ title='Jeopolitik gerilim ve petrol fiyatları küresel piyasaları baskılıyor'
+2026-03-18 14:12:06,160 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-18 14:25:05,717 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-18 14:25:05,718 INFO [INTENT] vector | Question: Iran'dan Turkiye'ye saldırı var mi?
+2026-03-18 14:25:05,718 INFO [SEARCH] intent=vector query="Iran'dan Turkiye'ye saldırı var mi?"
+2026-03-18 14:25:06,295 INFO [SEARCH] vector: id=19640995 url=https://www.haberler.com/politika/bae-iran-in-turkiye-ye-yonelik-fuze-saldirisini-kinadi-19640995-haberi/ title="BAE, İran'ın Türkiye'yi hedef alan füze saldırısını kınadı"
+2026-03-18 14:25:06,295 INFO [SEARCH] vector: id=19658247 url=https://www.haberler.com/guncel/bakan-fidan-turkiye-her-turlu-provokasyona-karsi-19658247-haberi/ title='Bakan Fidan: Türkiye Her Türlü Provokasyona Karşı Direnecektir. Caydırıcılık Kabiliyetlerimiz Son Derece Yüksek'
+2026-03-18 14:25:06,295 INFO [SEARCH] vector: id=19658290 url=https://www.haberler.com/politika/bakan-fidan-bangladesli-mevkidasi-khalilur-rahman-19658290-haberi/ title='Bakan Fidan, Bangladeşli mevkidaşı Khalilur Rahman ile görüştü'
+2026-03-18 14:25:07,273 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-18 17:47:17,676 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-18 17:47:17,677 INFO [INTENT] vector | Question: Gakatasary livepool maçı saat kaçta
+2026-03-18 17:47:17,677 INFO [SEARCH] intent=vector query='Gakatasary livepool maçı saat kaçta'
+2026-03-18 17:47:18,245 INFO [SEARCH] vector: id=19641388 url=https://www.haberler.com/haber/galatasaray-liverpool-muhtemel-11-ler-ve-mac-19641388-haberi/ title="Galatasaray Liverpool muhtemel 11'ler ve maç kadrosu!"
+2026-03-18 17:47:18,245 INFO [SEARCH] vector: id=19641819 url=https://www.haberler.com/haber/galatasaray-liverpool-maci-hangi-kanalda-nereden-19641819-haberi/ title='Galatasaray Liverpool maçı hangi kanalda, nereden, saat kaçta yayınlanacak?'
+2026-03-18 17:47:18,245 INFO [SEARCH] vector: id=19669065 url=https://www.haberler.com/haber/galatasaray-liverpool-muhtemel-11-ler-ve-mac-19669065-haberi/ title="Galatasaray Liverpool muhtemel 11'ler ve maç kadrosu!"
+2026-03-18 17:47:18,769 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-18 17:48:05,829 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-18 17:48:05,830 INFO [INTENT] vector | Question: Galatasaray bugün kiminle oynuyor
+2026-03-18 17:48:05,830 INFO [SEARCH] intent=vector query='Galatasaray bugün kiminle oynuyor'
+2026-03-18 17:48:06,409 INFO [SEARCH] vector: id=19640192 url=https://www.haberler.com/spor/galatasaray-liverpool-a-hazir-19640192-haberi/ title='Galatasaray, Liverpool maçına hazır'
+2026-03-18 17:48:06,409 INFO [SEARCH] vector: id=19664693 url=https://www.haberler.com/spor/galatasaray-ceyrek-final-icin-liverpool-19664693-haberi/ title='Galatasaray, çeyrek final için Liverpool deplasmanında'
+2026-03-18 17:48:06,409 INFO [SEARCH] vector: id=19669728 url=https://www.haberler.com/haber/bugun-kimin-maci-var-18-mart-bu-aksam-ne-maci-19669728-haberi/ title='Bugün kimin maçı var? 18 Mart bu akşam ne maçı var, Galatasaray kimle oynuyor?'
+2026-03-18 17:48:06,929 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-18 17:48:16,969 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-18 17:48:16,970 INFO [INTENT] gundem | Question: Dünya kupası ne zaman
+2026-03-18 17:48:16,970 INFO [SEARCH] intent=gundem query=''
+2026-03-18 17:48:16,993 INFO [SEARCH] gundem: id=19667365 onem_rank=14 date=2026-03-18 04:36:01.373000 title="Savaşta 19. gün! İran'ın Laricani intikamı kanlı oldu, İsrail ülkenin başkentine bomba yağdırdı"
+2026-03-18 17:48:16,993 INFO [SEARCH] gundem: id=19667961 onem_rank=12 date=2026-03-18 11:21:30.417000 title='Dünyayı korkutan petrol krizine Türkiye nefes oldu! Vanalar açıldı'
+2026-03-18 17:48:16,993 INFO [SEARCH] gundem: id=19667936 onem_rank=12 date=2026-03-18 11:15:42.300000 title="İmamoğlu'nun günlerdir tartıştığı hakimden bir isteği var: Tarihe geçersiniz"
+2026-03-18 17:48:17,692 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-18 17:49:34,781 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-18 17:49:34,782 INFO [INTENT] gundem | Question: Trump bugün ne dedi?
+2026-03-18 17:49:34,782 INFO [SEARCH] intent=gundem query=''
+2026-03-18 17:49:34,805 INFO [SEARCH] gundem: id=19667365 onem_rank=14 date=2026-03-18 04:36:01.373000 title="Savaşta 19. gün! İran'ın Laricani intikamı kanlı oldu, İsrail ülkenin başkentine bomba yağdırdı"
+2026-03-18 17:49:34,806 INFO [SEARCH] gundem: id=19667961 onem_rank=12 date=2026-03-18 11:21:30.417000 title='Dünyayı korkutan petrol krizine Türkiye nefes oldu! Vanalar açıldı'
+2026-03-18 17:49:34,806 INFO [SEARCH] gundem: id=19667936 onem_rank=12 date=2026-03-18 11:15:42.300000 title="İmamoğlu'nun günlerdir tartıştığı hakimden bir isteği var: Tarihe geçersiniz"
+2026-03-18 17:49:35,484 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-18 17:55:59,676 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-18 17:55:59,677 INFO [INTENT] followup | Question: Hürmüz boğazı ile ilgili son durum nedir?
+2026-03-18 17:56:00,540 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-18 17:56:00,541 INFO [SEARCH QUERY] "Hürmüz boğazı son durum"
+2026-03-18 17:56:00,541 INFO [SEARCH] intent=vector query='"Hürmüz boğazı son durum"'
+2026-03-18 17:56:01,119 INFO [SEARCH] vector: id=19646416 url=https://www.haberler.com/politika/bakan-uraloglu-hurmuz-bogazi-nda-15-tane-turk-19646416-haberi/ title='Bakan Uraloğlu: "Hürmüz Boğazı\'nda 15 tane Türk sahipli gemi var"'
+2026-03-18 17:56:01,119 INFO [SEARCH] vector: id=19646520 url=https://www.haberler.com/politika/bakan-uraloglu-hava-trafiginde-ciddi-risk-var-19646520-haberi/ title='Bakan Uraloğlu: Hava trafiğinde ciddi risk var'
+2026-03-18 17:56:01,119 INFO [SEARCH] vector: id=19657885 url=https://www.haberler.com/politika/trump-tan-hurmuz-bogazi-aciklamasi-bogazi-yakinda-yeniden-acacagiz-19657885-haberi/ title='Trump: "Öyle ya da böyle, Hürmüz Boğazı\'nı yakında yeniden açacağız"'
+2026-03-18 17:56:01,119 INFO [SEARCH] followup query: "Hürmüz boğazı son durum"
+2026-03-18 17:56:01,623 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-20 14:05:37,119 INFO [INTENT] gundem | Question: Bugünkü önemli haberler neler?
+2026-03-20 14:05:37,119 INFO [SEARCH] intent=gundem query=''
+2026-03-20 14:05:37,142 INFO [SEARCH] gundem: id=19674843 onem_rank=10 date=2026-03-20 16:38:59.040000 title='Kendi memleketinde silahlı korumalarla geziyor'
+2026-03-20 14:05:37,142 INFO [SEARCH] gundem: id=19674438 onem_rank=10 date=2026-03-20 13:54:56.503000 title='Genç futbolcu cinayetinde Aleyna Kalaycıoğlu gözaltında'
+2026-03-20 14:05:37,142 INFO [SEARCH] gundem: id=19674909 onem_rank=8 date=2026-03-20 17:02:10.217000 title='Trump: NATO biz olmadan kağıttan kaplan'
+2026-03-20 14:05:38,046 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-20 14:06:00,768 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-20 14:06:00,769 INFO [INTENT] vector | Question: Spor haberleri özeti
+2026-03-20 14:06:00,769 INFO [SEARCH] intent=vector query='Spor haberleri özeti'
+2026-03-20 14:06:01,273 INFO [SEARCH] vector: id=19649207 url=https://www.haberler.com/guncel/gundem-12-mart-2026-19649207-haberi/ title='GÜNDEM / 12 Mart 2026'
+2026-03-20 14:06:01,273 INFO [SEARCH] vector: id=19656025 url=https://www.haberler.com/guncel/gundem-ozeti-14-mart-2026-19656025-haberi/ title='Siyasi ve Ekonomik Programlar Bugün Gerçekleşecek'
+2026-03-20 14:06:01,273 INFO [SEARCH] vector: id=19664324 url=https://www.haberler.com/guncel/gundem-17-mart-2026-19664324-haberi/ title='GÜNDEM / 17 Mart 2026'
+2026-03-20 14:06:02,274 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-23 07:06:01,494 INFO [INTENT] gundem | Question: Gündem nedir?
+2026-03-23 07:06:01,494 INFO [SEARCH] intent=gundem query=''
+2026-03-23 07:06:01,516 INFO [SEARCH] gundem: id=19679079 onem_rank=10 date=2026-03-22 16:03:41 title="Hakan Fidan'dan kritik diplomasi trafiği! İran, Mısır, AB ve ABD ile temaslar"
+2026-03-23 07:06:01,516 INFO [SEARCH] gundem: id=19680371 onem_rank=8 date=2026-03-23 09:54:36.920000 title='Çılgın maça damga vuran görüntü'
+2026-03-23 07:06:01,516 INFO [SEARCH] gundem: id=19680363 onem_rank=8 date=2026-03-23 09:51:28.263000 title='Bu karenin değeri 20 milyon dolar'
+2026-03-23 07:06:03,564 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
