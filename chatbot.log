@@ -76,3 +76,214 @@
 2026-03-23 07:06:01,516 INFO [SEARCH] gundem: id=19680371 onem_rank=8 date=2026-03-23 09:54:36.920000 title='Çılgın maça damga vuran görüntü'
 2026-03-23 07:06:01,516 INFO [SEARCH] gundem: id=19680363 onem_rank=8 date=2026-03-23 09:51:28.263000 title='Bu karenin değeri 20 milyon dolar'
 2026-03-23 07:06:03,564 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-23 08:13:23,920 INFO Load pretrained SentenceTransformer: intfloat/multilingual-e5-base
+2026-03-23 08:13:29,829 INFO [INTENT] gundem | Question: Gündem nedir?
+2026-03-23 08:13:29,829 INFO [SEARCH] intent=gundem query=''
+2026-03-23 08:13:29,851 INFO [SEARCH] gundem: id=19679079 onem_rank=10 date=2026-03-22 16:03:41 title="Hakan Fidan'dan kritik diplomasi trafiği! İran, Mısır, AB ve ABD ile temaslar"
+2026-03-23 08:13:29,851 INFO [SEARCH] gundem: id=19680628 onem_rank=8 date=2026-03-23 11:12:51.833000 title="Tıp literatürüne giren son isim Diyarbakır'dan! Penisi alındı"
+2026-03-23 08:13:29,852 INFO [SEARCH] gundem: id=19680618 onem_rank=8 date=2026-03-23 11:11:44.250000 title='Türk çiftçileri büyük başarısı: İki geni birleştirdiler, verimi görünce inanamadılar'
+2026-03-23 08:13:30,502 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-23 10:35:55,897 INFO Load pretrained SentenceTransformer: intfloat/multilingual-e5-base
+2026-03-24 07:26:40,446 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-24 07:26:40,472 INFO [INTENT] vector | Question: Selam, Benim için en çarpıcı hırsızlık haberlerini bulabilir misin?
+2026-03-24 07:26:40,472 INFO [SEARCH] intent=vector query='Selam, Benim için en çarpıcı hırsızlık haberlerini bulabilir misin?'
+2026-03-24 07:26:41,863 INFO [SEARCH] vector: id=19670415 url=https://www.haberler.com/haber/19-mart-persembe-2026-resmi-gazete-atama-19670415-haberi/ title='19 Mart Perşembe 2026 Resmi Gazete ATAMA KARARLARI! Bugünün kararları neler? 19 Mart Resmi Gazete yayımlandı!'
+2026-03-24 07:26:41,864 INFO [SEARCH] vector: id=19671277 url=https://www.haberler.com/guncel/eyupsultan-da-motosikletli-genc-hayatini-kaybetti-19671277-haberi/ title="Eyüpsultan'da kazada ölen motosiklet sürücüsünün ablası: Yuvasını kuramadan mezara koyacağız"
+2026-03-24 07:26:41,864 INFO [SEARCH] vector: id=19680944 url=https://www.haberler.com/3-sayfa/istanbul-da-75-yasindaki-kadin-dolandirildi-2-milyon-tl-lik-altinini-kaybetti-19680944-haberi/ title='"Polisiz" diyerek kandırdılar, yaşlı kadının 2 milyonluk altını çaldılar'
+2026-03-24 07:26:42,407 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-24 07:41:44,052 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-24 07:41:44,053 INFO [INTENT] gundem | Question: bugünün en önemli haberi nedir
+2026-03-24 07:41:44,053 INFO [SEARCH] intent=gundem query=''
+2026-03-24 07:41:44,076 INFO [SEARCH] gundem: id=19682328 onem_rank=10 date=2026-03-23 19:07:59.360000 title="Muslera birinci ağızdan açıkladı: Türkiye'ye geri döneceğim"
+2026-03-24 07:41:44,076 INFO [SEARCH] gundem: id=19681311 onem_rank=10 date=2026-03-23 14:25:00.367000 title='Savaşa değil maça gittiler! İşte sonuç'
+2026-03-24 07:41:44,076 INFO [SEARCH] gundem: id=19681278 onem_rank=10 date=2026-03-23 14:14:57.767000 title="Aleyna Kalaycıoğlu'nun sorgu sırasında sürekli tekrarladığı cümle"
+2026-03-24 07:41:44,541 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-25 19:17:54,177 INFO [INTENT] gundem | Question: Bugünkü önemli haberler neler?
+2026-03-25 19:17:54,177 INFO [SEARCH] intent=gundem query=''
+2026-03-25 19:17:54,197 INFO [SEARCH] gundem: id=19686962 onem_rank=10 date=2026-03-25 12:17:33.327000 title="Paşinyan'dan kalpli günaydın videoları: Ülke lideri değil sanki fenomen"
+2026-03-25 19:17:54,198 INFO [SEARCH] gundem: id=19686509 onem_rank=10 date=2026-03-25 09:56:21.060000 title="Tel Aviv'de karga istilası! İzleyen herkes aynı yorumu yapıyor"
+2026-03-25 19:17:54,198 INFO [SEARCH] gundem: id=19686282 onem_rank=10 date=2026-03-25 06:12:58.217000 title='Beklenen haber geldi! İşte 1 aylık ateşkes ve 15 maddelik yol haritası'
+2026-03-25 19:17:55,035 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-26 08:52:35,702 INFO Load pretrained SentenceTransformer: intfloat/multilingual-e5-base
+2026-03-26 12:19:31,453 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-26 12:19:31,493 INFO [INTENT] greeting | Question: asdsds
+2026-03-26 12:19:35,766 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-26 12:19:35,768 INFO [INTENT] vector | Question: araba
+2026-03-26 12:19:35,768 INFO [SEARCH] intent=vector query='araba'
+2026-03-26 12:19:37,198 INFO [SEARCH] vector: id=19664682 url=https://www.haberler.com/guncel/imamoglu-cikar-amacli-suc-orgutu-davasinin-altinci-19664682-haberi/ title='İBB davasında 6. gün! İtirafçı, "Vali Gül" iddiasından 180 derece döndü'
+2026-03-26 12:19:37,198 INFO [SEARCH] vector: id=19665288 url=https://www.haberler.com/3-sayfa/afyonkarahisar-da-trafik-kazasi-65-yasindaki-surucu-yaralandi-19665288-haberi/ title='Orta refüje giren otomobil sürücüsü yaralandı'
+2026-03-26 12:19:37,198 INFO [SEARCH] vector: id=19690156 url=https://www.haberler.com/kayip-olarak-aranan-84-yasindaki-kadinin-cesedi-haberi/ title='Kayıp olarak aranan 84 yaşındaki kadının cesedi bulundu'
+2026-03-26 12:19:37,955 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-27 06:45:25,777 INFO Load pretrained SentenceTransformer: intfloat/multilingual-e5-base
+2026-03-27 07:07:57,612 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-27 07:07:57,639 INFO [INTENT] vector | Question: dünkü milli maç ne oldu
+2026-03-27 07:07:57,640 INFO [SEARCH] intent=vector query='dünkü milli maç ne oldu'
+2026-03-27 07:08:51,214 INFO Load pretrained SentenceTransformer: intfloat/multilingual-e5-base
+2026-03-27 07:08:57,643 INFO [INTENT] gundem | Question: Gündem nedir?
+2026-03-27 07:08:57,643 INFO [SEARCH] intent=gundem query=''
+2026-03-27 08:20:34,358 INFO Load pretrained SentenceTransformer: intfloat/multilingual-e5-base
+2026-03-27 08:24:11,382 INFO Load pretrained SentenceTransformer: intfloat/multilingual-e5-base
+2026-03-27 08:30:15,756 INFO Load pretrained SentenceTransformer: intfloat/multilingual-e5-base
+2026-03-27 08:31:10,249 INFO [INTENT] gundem | Question: Gündem nedir?
+2026-03-27 08:31:10,250 INFO [SEARCH] intent=gundem query=''
+2026-03-27 08:31:10,289 INFO [SEARCH] gundem: id=19515493 onem_rank=3 date=2026-03-26 11:01:40.603000 title='Gamze Erçel kimdir? Gamze Erçel kaç yaşında, nereli, ne iş yapıyor?'
+2026-03-27 08:31:10,767 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-27 09:09:49,548 INFO Load pretrained SentenceTransformer: intfloat/multilingual-e5-base
+2026-03-27 09:33:48,089 INFO [INTENT] gundem | Question: Gündem nedir?
+2026-03-27 09:33:48,090 INFO [SEARCH] intent=gundem query=''
+2026-03-27 09:33:48,193 INFO [SEARCH] gundem: id=19691653 onem_rank=14 date=2026-03-26 22:25:34.803000 title='Umreye gitmek için yola çıktılar, kendilerini karakolda buldular'
+2026-03-27 09:33:48,194 INFO [SEARCH] gundem: id=19691590 onem_rank=14 date=2026-03-26 21:51:06.210000 title="Dünya Kupası için son 90 dakika! Romanya'yı deviren A Milli Takımımız finalde"
+2026-03-27 09:33:48,194 INFO [SEARCH] gundem: id=19692526 onem_rank=12 date=2026-03-27 11:18:42.660000 title='Trump bu yüzden mi barış istiyor? Kayıplar tek tek listelendi'
+2026-03-27 09:33:49,060 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-27 09:34:09,544 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-27 09:34:09,557 INFO [INTENT] followup | Question: dünkü maç ne oldu
+2026-03-27 09:34:10,244 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-27 09:34:10,245 INFO [SEARCH QUERY] Türkiye milli futbol takımı maç sonucu
+2026-03-27 09:34:10,245 INFO [SEARCH] intent=vector query='Türkiye milli futbol takımı maç sonucu'
+2026-03-27 09:34:12,362 INFO [SEARCH] vector: id=19691336 score=0.804 onem=10 url=https://www.haberler.com/spor/canli-anlatim-karsilasmada-heyecan-cok-yuksek-19691336-haberi/ title='A Milli Takımımız, Dünya Kupası için Play-off Finalinde'
+2026-03-27 09:34:12,362 INFO [SEARCH] vector: id=19683354 score=0.803 onem=10 url=https://www.haberler.com/spor/milli-takim-kampinina-damga-vuran-goruntu-19683354-haberi/ title='Milli Takım kampına damga vuran görüntü'
+2026-03-27 09:34:12,362 INFO [SEARCH] vector: id=19691604 score=0.697 onem=4 url=https://www.haberler.com/spor/turkiye-a-milli-futbol-takimi-romanya-yi-1-0-maglup-ederek-finale-yukseldi-19691604-haberi/ title='Futbol: 2026 FIFA Dünya Kupası Avrupa Elemeleri play-off turu yarı final'
+2026-03-27 09:34:12,362 INFO [SEARCH] followup query: Türkiye milli futbol takımı maç sonucu
+2026-03-27 09:34:13,091 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-27 09:34:30,202 INFO [INTENT] gundem | Question: magazin gündeminde neler var
+2026-03-27 09:34:30,202 INFO [SEARCH] intent=gundem query=''
+2026-03-27 09:34:30,246 INFO [SEARCH] gundem: id=19691653 onem_rank=14 date=2026-03-26 22:25:34.803000 title='Umreye gitmek için yola çıktılar, kendilerini karakolda buldular'
+2026-03-27 09:34:30,247 INFO [SEARCH] gundem: id=19691590 onem_rank=14 date=2026-03-26 21:51:06.210000 title="Dünya Kupası için son 90 dakika! Romanya'yı deviren A Milli Takımımız finalde"
+2026-03-27 09:34:30,247 INFO [SEARCH] gundem: id=19692526 onem_rank=12 date=2026-03-27 11:18:42.660000 title='Trump bu yüzden mi barış istiyor? Kayıplar tek tek listelendi'
+2026-03-27 09:34:30,827 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-27 09:34:50,092 INFO [INTENT] gundem | Question: teknoloji gündeminde neler var
+2026-03-27 09:34:50,093 INFO [SEARCH] intent=gundem query=''
+2026-03-27 09:34:50,134 INFO [SEARCH] gundem: id=19691653 onem_rank=14 date=2026-03-26 22:25:34.803000 title='Umreye gitmek için yola çıktılar, kendilerini karakolda buldular'
+2026-03-27 09:34:50,134 INFO [SEARCH] gundem: id=19691590 onem_rank=14 date=2026-03-26 21:51:06.210000 title="Dünya Kupası için son 90 dakika! Romanya'yı deviren A Milli Takımımız finalde"
+2026-03-27 09:34:50,134 INFO [SEARCH] gundem: id=19692526 onem_rank=12 date=2026-03-27 11:18:42.660000 title='Trump bu yüzden mi barış istiyor? Kayıplar tek tek listelendi'
+2026-03-27 09:34:50,691 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-27 09:35:01,199 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-27 09:35:01,200 INFO [INTENT] vector | Question: yeni iphone ne zaman çıkıyor
+2026-03-27 09:35:01,200 INFO [SEARCH] intent=vector query='yeni iphone ne zaman çıkıyor'
+2026-03-27 09:35:02,031 INFO [SEARCH] vector: id=19664546 score=0.656 onem=3 url=https://www.haberler.com/haber/uzak-sehir-54-bolum-izle-uzak-sehir-yeni-bolum-19664546-haberi/ title='Uzak Şehir 54. bölüm izle! Uzak Şehir yeni bölüm ne zaman?'
+2026-03-27 09:35:02,031 INFO [SEARCH] vector: id=19675177 score=0.651 onem=3 url=https://www.haberler.com/haber/tasacak-bu-deniz-bu-aksam-var-mi-neden-yok-19675177-haberi/ title='Taşacak Bu Deniz bu akşam var mı, neden yok? Taşacak Bu Deniz yeni bölüm ne zaman?'
+2026-03-27 09:35:02,031 INFO [SEARCH] vector: id=19682139 score=0.646 onem=3 url=https://www.haberler.com/haber/mobile-legends-cekilis-ne-zaman-sonuclari-19682139-haberi/ title='Mobile Legends çekiliş ne zaman, SONUÇLARI açıklandı mı? MLBB çekiliş sonuçları ne zaman açıklanacak?'
+2026-03-27 09:35:02,745 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-27 09:35:44,922 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-27 09:35:44,924 INFO [INTENT] followup | Question: aleyna kalkaycıoğlu olayı ne
+2026-03-27 09:35:45,544 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-27 09:35:45,545 INFO [SEARCH QUERY] aleyna kalkaycıoğlu haberleri
+2026-03-27 09:35:45,546 INFO [SEARCH] intent=vector query='aleyna kalkaycıoğlu haberleri'
+2026-03-27 09:35:46,410 INFO [SEARCH] vector: id=19676747 score=0.836 onem=12 url=https://www.haberler.com/haberler/gozaltindaki-aleyna-kalaycioglu-hakkinda-yeni-19676747-haberi/ title='Gözaltındaki Aleyna Kalaycıoğlu hakkında yeni gelişme'
+2026-03-27 09:35:46,411 INFO [SEARCH] vector: id=19689402 score=0.805 onem=10 url=https://www.haberler.com/guncel/futbolcu-kubilay-kaan-kundakci-cinayeti-rapci-19689402-haberi/ title="Kundakçı cinayetinde Vahap Canbay'ın ifadesi ortaya çıktı: İlişkilerini temizlikçiden öğrendim"
+2026-03-27 09:35:46,411 INFO [SEARCH] vector: id=19674616 score=0.801 onem=10 url=https://www.haberler.com/spor/goruntuler-ortaya-cikti-genc-futbolcuyu-olume-19674616-haberi/ title='Görüntüler ortaya çıktı! Genç futbolcuyu ölüme götüren saldırıda çakarlı araç detayı'
+2026-03-27 09:35:46,411 INFO [SEARCH] followup query: aleyna kalkaycıoğlu haberleri
+2026-03-27 09:35:47,369 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-27 09:36:29,664 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-27 09:36:29,666 INFO [INTENT] followup | Question: alaattin kadayıfçıoğlu kim
+2026-03-27 09:36:30,393 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-27 09:36:30,394 INFO [SEARCH QUERY] alaattin kadayıfçıoğlu kimdir
+2026-03-27 09:36:30,394 INFO [SEARCH] intent=vector query='alaattin kadayıfçıoğlu kimdir'
+2026-03-27 09:36:31,222 INFO [SEARCH] vector: id=19681393 score=0.689 onem=3 url=https://www.haberler.com/haber/bilal-kadayifcioglu-kimdir-alaattin-19681393-haberi/ title="Bilal Kadayıfçıoğlu kimdir? Alaattin Kadayıfçıoğlu'nun babası Bilal Kadayıfçıoğlu ne iş yapıyor, hangi şirketlerin sahibi?"
+2026-03-27 09:36:31,222 INFO [SEARCH] vector: id=19684206 score=0.688 onem=3 url=https://www.haberler.com/haber/alaattin-kadayifcioglu-nun-aylik-geliri-ne-kadar-19684206-haberi/ title="Alaattin Kadayıfçıoğlu'nun aylık geliri ne kadar, mal varlığı nedir? Alaattin Kadayıfçıoğlu ayda ne kadar kazanıyor?"
+2026-03-27 09:36:31,222 INFO [SEARCH] vector: id=19675002 score=0.688 onem=3 url=https://www.haberler.com/haber/alaattin-kadayifcioglu-kimdir-ne-is-yapiyor-19675002-haberi/ title='Alaattin Kadayıfçıoğlu kimdir, ne iş yapıyor? Alaattin Kadayıfçıoğlu kaç yaşında, nereli, sevgilisi ve babası kim?'
+2026-03-27 09:36:31,223 INFO [SEARCH] followup query: alaattin kadayıfçıoğlu kimdir
+2026-03-27 09:36:31,764 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-27 09:36:48,139 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-27 09:36:48,140 INFO [INTENT] followup | Question: ölen futbolcu kim tanıdık biri mi
+2026-03-27 09:36:48,754 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-27 09:36:48,755 INFO [SEARCH QUERY] kubilay kaan kundakçı futbolcu
+2026-03-27 09:36:48,755 INFO [SEARCH] intent=vector query='kubilay kaan kundakçı futbolcu'
+2026-03-27 09:36:49,584 INFO [SEARCH] vector: id=19674338 score=0.677 onem=3 url=https://www.haberler.com/haber/kubilay-kaan-kundakci-kimdir-kubilay-kaan-19674338-haberi/ title='Futbolcu Kubilay Kaan Kundakçı kimdir, kaç yaşında? Kubilay Kaan Kundakçı neden öldü, kim öldürdü?'
+2026-03-27 09:36:49,584 INFO [SEARCH] vector: id=19674517 score=0.676 onem=3 url=https://www.haberler.com/haber/futbolcu-kubilay-kaan-kundakci-kimdir-kac-19674517-haberi/ title='Futbolcu Kubilay Kaan Kundakçı kimdir, kaç yaşında, nereli? Kubilay Kaan Kundakçı neden öldü?'
+2026-03-27 09:36:49,584 INFO [SEARCH] vector: id=19684726 score=0.675 onem=3 url=https://www.haberler.com/haber/eski-survivor-yarismacilari-aleyna-kalaycioglu-19684726-haberi/ title='Eski Survivor yarışmacıları Aleyna Kalaycıoğlu hakkında ne açıklama yaptı? Yiğit Poyraz, Batuhan Karacakaya, Aleyna Kalaycıoğlu hakkında ne dedi?'
+2026-03-27 09:36:49,584 INFO [SEARCH] followup query: kubilay kaan kundakçı futbolcu
+2026-03-27 09:36:50,206 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-27 09:37:20,956 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-27 09:37:20,957 INFO [INTENT] followup | Question: canbay kim
+2026-03-27 09:37:21,441 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-27 09:37:21,442 INFO [SEARCH QUERY] vahap canbay kim
+2026-03-27 09:37:21,442 INFO [SEARCH] intent=vector query='vahap canbay kim'
+2026-03-27 09:37:22,267 INFO [SEARCH] vector: id=19674688 score=0.673 onem=3 url=https://www.haberler.com/haber/vahap-canbay-kimdir-rapci-canbay-kac-yasinda-19674688-haberi/ title='Vahap Canbay kimdir? Rapçi Canbay kaç yaşında, nereli?'
+2026-03-27 09:37:22,267 INFO [SEARCH] vector: id=19683463 score=0.666 onem=3 url=https://www.haberler.com/haber/vahap-canbay-kimdir-rapci-vahap-canbay-kac-19683463-haberi/ title='Vahap Canbay kimdir? Rapçi Vahap Canbay kaç yaşında, nereli?'
+2026-03-27 09:37:22,267 INFO [SEARCH] vector: id=19683862 score=0.661 onem=3 url=https://www.haberler.com/haber/canbay-in-mafya-baglantisi-var-mi-aleyna-19683862-haberi/ title="Canbay'ın mafya bağlantısı var mı, Aleyna Kalaycıoğlu'na şiddet mi gösterdi? Rapçi Vahap Canbay'ın mafya bağlantısı nedir, Aleyna Kalaycıoğlu ne dedi?"
+2026-03-27 09:37:22,267 INFO [SEARCH] followup query: vahap canbay kim
+2026-03-27 09:37:23,126 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-27 09:37:46,700 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-27 09:37:46,702 INFO [INTENT] followup | Question: aleyna kim
+2026-03-27 09:37:47,153 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-27 09:37:47,154 INFO [SEARCH QUERY] aleyna kalaycıoğlu
+2026-03-27 09:37:47,154 INFO [SEARCH] intent=vector query='aleyna kalaycıoğlu'
+2026-03-27 09:37:47,987 INFO [SEARCH] vector: id=19680480 score=0.695 onem=3 url=https://www.haberler.com/haber/aleyna-kalaycioglu-olayi-nedir-neden-gozaltina-19680480-haberi/ title='Aleyna Kalaycıoğlu olayı nedir, neden gözaltına alındı? SON DAKİKA! Aleyna Kalaycıoğlu kimdir, kaç yaşında, nereli?'
+2026-03-27 09:37:47,987 INFO [SEARCH] vector: id=19674352 score=0.693 onem=3 url=https://www.haberler.com/haber/aleyna-kalaycioglu-neden-gozaltina-alindi-aleyna-19674352-haberi/ title='Aleyna Kalaycıoğlu neden gözaltına alındı? Aleyna Kalaycıoğlu kimdir, kaç yaşında, ne iş yapıyor?'
+2026-03-27 09:37:47,987 INFO [SEARCH] vector: id=19683875 score=0.690 onem=3 url=https://www.haberler.com/haber/aleyna-kalaycioglu-kimdir-kubilay-kaan-kundakci-19683875-haberi/ title='Aleyna Kalaycıoğlu kimdir? Kubilay Kaan Kundakçı cinayetinde tutuklanan Aleyna Kalaycıoğlu kaç yaşında, nereli, ne iş yapıyor?'
+2026-03-27 09:37:47,987 INFO [SEARCH] followup query: aleyna kalaycıoğlu
+2026-03-27 09:37:48,595 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-27 11:16:56,926 INFO [INTENT] gundem | Question: Gündem nedir?
+2026-03-27 11:16:56,926 INFO [SEARCH] intent=gundem query=''
+2026-03-27 11:16:56,968 INFO [SEARCH] gundem: id=19691653 onem_rank=14 date=2026-03-26 22:25:34.803000 title='Umreye gitmek için yola çıktılar, kendilerini karakolda buldular'
+2026-03-27 11:16:56,969 INFO [SEARCH] gundem: id=19691590 onem_rank=14 date=2026-03-26 21:51:06.210000 title="Dünya Kupası için son 90 dakika! Romanya'yı deviren A Milli Takımımız finalde"
+2026-03-27 11:16:56,969 INFO [SEARCH] gundem: id=19692526 onem_rank=12 date=2026-03-27 11:18:42.660000 title='Trump bu yüzden mi barış istiyor? Kayıplar tek tek listelendi'
+2026-03-27 11:16:57,539 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-27 11:17:29,364 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-27 11:17:29,365 INFO [INTENT] followup | Question: slovakya kosovayı kim kazandı
+2026-03-27 11:17:29,942 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-27 11:17:29,943 INFO [SEARCH QUERY] slovakya kosova maçı sonucu
+2026-03-27 11:17:29,943 INFO [SEARCH] intent=vector query='slovakya kosova maçı sonucu'
+2026-03-27 11:17:30,772 INFO [SEARCH] vector: id=19691904 score=0.816 onem=10 url=https://www.haberler.com/spor/a-milli-takimimizin-finaldeki-rakibi-belli-oldu-19691904-haberi/ title="4-3'lük muhteşem maç! A Milli Takım'ın finaldeki rakibi belli oldu"
+2026-03-27 11:17:30,772 INFO [SEARCH] vector: id=19691902 score=0.675 onem=2 url=https://www.haberler.com/haber/slovakya-kosova-kac-kac-bitti-mac-sonucu-slovakya-19691902-haberi/ title='Slovakya Kosova kaç kaç bitti? MAÇ SONUCU! Slovakya Kosova golleri kim attı, canlı maç anlatımı!'
+2026-03-27 11:17:30,772 INFO [SEARCH] vector: id=19691899 score=0.672 onem=2 url=https://www.haberler.com/haber/slovakya-kosova-mac-ozeti-ve-golleri-3-4-slovakya-19691899-haberi/ title='Slovakya Kosova maç özeti ve golleri! (3-4) Slovakya Kosova kaç kaç bitti, golleri kim attı?'
+2026-03-27 11:17:30,772 INFO [SEARCH] followup query: slovakya kosova maçı sonucu
+2026-03-27 11:17:31,201 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-27 11:17:47,523 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-27 11:17:47,524 INFO [INTENT] followup | Question: finalde kosova'ya çakarız zaten
+2026-03-27 11:17:48,063 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-27 11:17:48,064 INFO [SEARCH QUERY] kosova türkiye dünya kupası elemeleri finali
+2026-03-27 11:17:48,064 INFO [SEARCH] intent=vector query='kosova türkiye dünya kupası elemeleri finali'
+2026-03-27 11:17:48,876 INFO [SEARCH] vector: id=19691895 score=0.697 onem=4 url=https://www.haberler.com/spor/a-milli-futbol-takimi-nin-dunya-kupasi-elemeleri-19691895-haberi/ title="A Milli Futbol Takımı'nın Dünya Kupası Elemeleri play-off turu finalindeki rakibi Kosova oldu."
+2026-03-27 11:17:48,876 INFO [SEARCH] vector: id=19691708 score=0.692 onem=4 url=https://www.haberler.com/spor/a-milli-takim-romanya-yi-1-0-gecerek-finalde-19691708-haberi/ title="A Milli Futbol Takımı, Romanya'yı 1-0 Mağlup Ederek FIFA 2026 Dünya Kupası Avrupa Elemeleri Play-Off Finali'ne Yükseldi"
+2026-03-27 11:17:48,877 INFO [SEARCH] vector: id=19691884 score=0.659 onem=2 url=https://www.haberler.com/haber/turkiye-kosova-maci-ne-zaman-hangi-kanalda-19691884-haberi/ title='Türkiye Kosova maçı ne zaman, hangi kanalda? Türkiye Kosova maçı nerede oynanacak?'
+2026-03-27 11:17:48,877 INFO [SEARCH] followup query: kosova türkiye dünya kupası elemeleri finali
+2026-03-27 11:17:49,391 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-27 11:40:06,536 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-27 11:40:06,537 INFO [INTENT] greeting | Question: merhabalarrrr
+2026-03-27 11:40:14,592 INFO [INTENT] greeting | Question: naber
+2026-03-27 11:40:16,731 INFO [INTENT] greeting | Question: nasılsın
+2026-03-27 11:56:05,273 INFO Load pretrained SentenceTransformer: intfloat/multilingual-e5-base
+2026-03-27 11:56:16,016 INFO Load pretrained SentenceTransformer: intfloat/multilingual-e5-base
+2026-03-27 11:56:37,968 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-27 11:56:38,000 INFO [INTENT] vector | Question: Ekonomide son gelişmeler
+2026-03-27 11:56:38,000 INFO [SEARCH] intent=vector query='Ekonomide son gelişmeler'
+2026-03-27 11:56:39,172 INFO [SEARCH] vector: id=19686376 score=0.695 onem=4 url=https://www.haberler.com/ekonomi/kuresel-piyasalar-orta-dogu-ya-yonelik-temkinli-19686376-haberi/ title="Küresel piyasalar Orta Doğu'ya yönelik temkinli iyimserlikle ilerliyor"
+2026-03-27 11:56:39,172 INFO [SEARCH] vector: id=19670753 score=0.693 onem=4 url=https://www.haberler.com/ekonomi/kuresel-piyasalar-artan-jeopolitik-riskler-ve-fed-19670753-haberi/ title="Küresel piyasalar, artan jeopolitik riskler ve Fed'in faiz kararı sonrası negatif seyrediyor"
+2026-03-27 11:56:39,172 INFO [SEARCH] vector: id=19683211 score=0.692 onem=4 url=https://www.haberler.com/kuresel-piyasalar-orta-dogu-gundeminde-netlik-haberi/ title='Küresel piyasalar Orta Doğu gündeminde netlik arıyor'
+2026-03-27 11:56:54,776 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-27 11:56:54,777 INFO [INTENT] vector | Question: Spor haberleri özeti
+2026-03-27 11:56:54,777 INFO [SEARCH] intent=vector query='Spor haberleri özeti'
+2026-03-27 11:56:55,583 INFO [SEARCH] vector: id=19691837 score=0.683 onem=4 url=https://www.haberler.com/guncel/gundem-ozeti-27-mart-2026-19691837-haberi/ title='GÜNDEM ÖZETİ / 27 Mart 2026'
+2026-03-27 11:56:55,583 INFO [SEARCH] vector: id=19692123 score=0.681 onem=4 url=https://www.haberler.com/guncel/gundem-27-mart-2026-19692123-haberi/ title='GÜNDEM / 27 Mart 2026'
+2026-03-27 11:56:55,584 INFO [SEARCH] vector: id=19675746 score=0.680 onem=4 url=https://www.haberler.com/guncel/siyasi-partiler-ramazan-bayrami-nda-bayramlasiyor-19675746-haberi/ title='GÜNDEM / 21 Mart 2026'
+2026-03-27 11:59:01,310 INFO Load pretrained SentenceTransformer: intfloat/multilingual-e5-base
+2026-03-27 11:59:10,638 INFO [INTENT] gundem | Question: Gündem nedir?
+2026-03-27 11:59:10,638 INFO [SEARCH] intent=gundem query=''
+2026-03-27 11:59:10,684 INFO [SEARCH] gundem: id=19691653 onem_rank=14 date=2026-03-26 22:25:34.803000 title='Umreye gitmek için yola çıktılar, kendilerini karakolda buldular'
+2026-03-27 11:59:10,684 INFO [SEARCH] gundem: id=19691590 onem_rank=14 date=2026-03-26 21:51:06.210000 title="Dünya Kupası için son 90 dakika! Romanya'yı deviren A Milli Takımımız finalde"
+2026-03-27 11:59:10,684 INFO [SEARCH] gundem: id=19692526 onem_rank=12 date=2026-03-27 11:18:42.660000 title='Trump bu yüzden mi barış istiyor? Kayıplar tek tek listelendi'
+2026-03-27 12:04:15,926 INFO Load pretrained SentenceTransformer: intfloat/multilingual-e5-base
+2026-03-27 12:04:26,293 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-27 12:04:26,325 INFO [INTENT] vector | Question: Ekonomide son gelişmeler
+2026-03-27 12:04:26,325 INFO [SEARCH] intent=vector query='Ekonomide son gelişmeler'
+2026-03-27 12:04:27,484 INFO [SEARCH] vector: id=19686376 score=0.695 onem=4 url=https://www.haberler.com/ekonomi/kuresel-piyasalar-orta-dogu-ya-yonelik-temkinli-19686376-haberi/ title="Küresel piyasalar Orta Doğu'ya yönelik temkinli iyimserlikle ilerliyor"
+2026-03-27 12:04:27,484 INFO [SEARCH] vector: id=19670753 score=0.693 onem=4 url=https://www.haberler.com/ekonomi/kuresel-piyasalar-artan-jeopolitik-riskler-ve-fed-19670753-haberi/ title="Küresel piyasalar, artan jeopolitik riskler ve Fed'in faiz kararı sonrası negatif seyrediyor"
+2026-03-27 12:04:27,484 INFO [SEARCH] vector: id=19683211 score=0.692 onem=4 url=https://www.haberler.com/kuresel-piyasalar-orta-dogu-gundeminde-netlik-haberi/ title='Küresel piyasalar Orta Doğu gündeminde netlik arıyor'
+2026-03-27 12:06:56,445 INFO Load pretrained SentenceTransformer: intfloat/multilingual-e5-base
+2026-03-27 12:07:07,671 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-27 12:07:07,700 INFO [INTENT] vector | Question: Ekonomide son gelişmeler
+2026-03-27 12:07:07,701 INFO [SEARCH] intent=vector query='Ekonomide son gelişmeler'
+2026-03-27 12:07:08,845 INFO [SEARCH] vector: id=19686376 score=0.695 onem=4 url=https://www.haberler.com/ekonomi/kuresel-piyasalar-orta-dogu-ya-yonelik-temkinli-19686376-haberi/ title="Küresel piyasalar Orta Doğu'ya yönelik temkinli iyimserlikle ilerliyor"
+2026-03-27 12:07:08,845 INFO [SEARCH] vector: id=19670753 score=0.693 onem=4 url=https://www.haberler.com/ekonomi/kuresel-piyasalar-artan-jeopolitik-riskler-ve-fed-19670753-haberi/ title="Küresel piyasalar, artan jeopolitik riskler ve Fed'in faiz kararı sonrası negatif seyrediyor"
+2026-03-27 12:07:08,845 INFO [SEARCH] vector: id=19683211 score=0.692 onem=4 url=https://www.haberler.com/kuresel-piyasalar-orta-dogu-gundeminde-netlik-haberi/ title='Küresel piyasalar Orta Doğu gündeminde netlik arıyor'
+2026-03-27 12:07:09,946 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-27 12:07:12,806 INFO {"intent": "vector", "question": "Ekonomide son gelişmeler", "answer": "Ekonomide son gelişmeler özetle şöyle:\n\n- Küresel piyasalar, Orta Doğu'daki gerilimlere ilişkin belirsizlikler nedeniyle temkinli bir seyir izliyor. Petrol fiyatlarındaki yükseliş, enflasyonist baskıları artırıyor.\n\n- ABD Merkez Bankası (Fed), politika faizini sabit tuttu. Ancak Orta Doğu'daki gelişmelerin ekonomiye etkilerinin henüz belirsiz olduğunu belirtti. \n\n- Avrupa Merkez Bankası (ECB) ve İngiltere Merkez Bankası (BoE) da bugün faiz kararlarını açıklayacak. Bölgedeki enerji fiyatlarındaki artışın enflasyona etkisi takip ediliyor.\n\n- Asya piyasalarında risk iştahı yüksek seyrediyor. Ancak Japonya'da enflasyon hedefin altında kalırken, imalat ve hizmet sektörü PMI'leri yavaşlama gösterdi.\n\n- Türkiye'de BIST 100 endeksi günü pozitif kapattı. Bugün yurt içi ve yurt dışı PMI verileri takip edilecek.\n\nÖzetle, jeopolitik riskler, enerji fiyatları ve merkez bankalarının politika adımları küresel ekonomi gündeminde öne çıkıyor.", "sources": ["https://www.haberler.com/ekonomi/kuresel-piyasalar-orta-dogu-ya-yonelik-temkinli-19686376-haberi/", "https://www.haberler.com/ekonomi/kuresel-piyasalar-artan-jeopolitik-riskler-ve-fed-19670753-haberi/", "https://www.haberler.com/kuresel-piyasalar-orta-dogu-gundeminde-netlik-haberi/"]}
+2026-03-27 12:10:18,595 INFO [INTENT] gundem | Question: gündemdeki önemli gelişmeler ne
+2026-03-27 12:10:18,595 INFO [SEARCH] intent=gundem query=''
+2026-03-27 12:10:18,635 INFO [SEARCH] gundem: id=19691653 onem_rank=14 date=2026-03-26 22:25:34.803000 title='Umreye gitmek için yola çıktılar, kendilerini karakolda buldular'
+2026-03-27 12:10:18,635 INFO [SEARCH] gundem: id=19691590 onem_rank=14 date=2026-03-26 21:51:06.210000 title="Dünya Kupası için son 90 dakika! Romanya'yı deviren A Milli Takımımız finalde"
+2026-03-27 12:10:18,636 INFO [SEARCH] gundem: id=19692526 onem_rank=12 date=2026-03-27 11:18:42.660000 title='Trump bu yüzden mi barış istiyor? Kayıplar tek tek listelendi'
+2026-03-27 12:10:19,468 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-27 12:10:21,543 INFO {"intent": "gundem", "question": "gündemdeki önemli gelişmeler ne", "answer": "Gündemdeki önemli gelişmeler şöyle özetlenebilir:\n\n- Sivas'ta umreye gitmek için binlerce lira ödeyen 125 vatandaş, uçuşun ertelenmesi nedeniyle mağdur oldu. Vatandaşlar, acente tarafından dolandırıldıklarını iddia ederek polise şikayette bulundu.\n\n- Türkiye Milli Futbol Takımı, 2026 FIFA Dünya Kupası Avrupa Elemeleri play-off turunda Romanya'yı 1-0 yenerek finale yükseldi. Milliler, finalde Slovakya-Kosova maçının galibiyle karşılaşacak.\n\n- ABD ve İsrail'in İran'a yönelik saldırılarının ilk üç haftasında milyarlarca dolarlık askeri kayıp yaşandı. Hava araçları ve insansız sistemlerde ciddi hasar oluştu. Savaşın maliyetinin 1,4 ile 2,9 milyar dolar arasında olabileceği belirtiliyor.", "sources": ["https://www.haberler.com/haberler/mekke-ucagini-bekleyen-umreciler-soka-ugradi-19691653-haberi/", "https://www.haberler.com/spor/dunya-kupasi-icin-son-90-dakika-romanya-yi-19691590-haberi/", "https://www.haberler.com/dunya/savasta-abdnin-kayiplari-artiyor-19692526-haberi/"]}
