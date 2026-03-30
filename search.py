@@ -81,8 +81,8 @@ def search(question: str, embed_model, top_k: int = TOP_K, intent: str = "vector
                 ORDER BY article_id, embedding <=> %s::vector
             ) ranked
             ORDER BY score DESC
-            LIMIT %s
-        """, (query_vector, query_vector, top_k))
+            LIMIT 50
+        """, (query_vector, query_vector))
 
         top_articles = cursor.fetchall()
         if not top_articles:
@@ -110,12 +110,19 @@ def search(question: str, embed_model, top_k: int = TOP_K, intent: str = "vector
 
     def combined_score(row):
         article_id, title, full_text, onem_rank, ilk_cekilme_tarihi = row
+    
         vec = scores.get(article_id, 0)
         imp = ((onem_rank or 2) - 2.0) / 14.0
-        rec = ilk_cekilme_tarihi.timestamp() / now_epoch if ilk_cekilme_tarihi else 0
-        return vec * 0.6 + imp * 0.1 + rec * 0.3
+    
+        if ilk_cekilme_tarihi:
+            age_hours = (time.time() - ilk_cekilme_tarihi.timestamp()) / 3600
+            rec = 1 / (1 + age_hours / 12)  
+        else:
+            rec = 0
+    
+        return vec * 0.6 + rec * 0.3 + imp * 0.1
 
-    articles = sorted(articles, key=combined_score, reverse=True)
+    articles = sorted(articles, key=combined_score, reverse=True)[:3]
 
     parts, source_urls = [], []
     for article_id, title, full_text, onem_rank, ilk_cekilme_tarihi in articles:
