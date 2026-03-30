@@ -9,47 +9,52 @@ def get_pg_connection():
     return psycopg2.connect(**POSTGRES_CONFIG)
 
 
-def search(question: str, embed_model, top_k: int = TOP_K, intent: str = "vector"):
-    logger.info(f"[SEARCH] intent={intent} query={question!r}")
+def search(question: str, embed_model, top_k: int = TOP_K, intent: str = "vector", category: str = None):
+    logger.info(f"[SEARCH] intent={intent} category={category!r} query={question!r}")
     conn = get_pg_connection()
     try:
         cursor = conn.cursor()
 
-        # ¦¦ gundem: importance + recency, no vector score ¦¦
+        #gundem: importance + recency, optional category filter 
         if intent == "gundem":
-            cursor.execute("""
-                SELECT article_id, article_url, title, full_text, onem_rank, ilk_cekilme_tarihi
-                FROM (
-                    SELECT DISTINCT ON (title)
-                        article_id, article_url, title, full_text, onem_rank, ilk_cekilme_tarihi
-                    FROM news_articles
-                    WHERE ilk_cekilme_tarihi >= NOW() - INTERVAL '24 hours'
-                ) deduped
-                ORDER BY (
-                    ((onem_rank - 2.0) / 14.0) * 0.6 +
-                    (EXTRACT(EPOCH FROM ilk_cekilme_tarihi) / EXTRACT(EPOCH FROM NOW())) * 0.4
-                ) DESC NULLS LAST
-                LIMIT %s
-            """, (top_k,))
-            rows = cursor.fetchall()
+            category_filter = "AND category = %s" if category else ""
 
-            if not rows:
-                cursor.execute("""
-                    SELECT article_id, article_url, title, full_text, onem_rank, ilk_cekilme_tarihi
-                    FROM (
-                        SELECT DISTINCT ON (title)
-                            article_id, article_url, title, full_text, onem_rank, ilk_cekilme_tarihi
-                        FROM news_articles
-                        WHERE ilk_cekilme_tarihi >= NOW() - INTERVAL '48 hours'
-                        ORDER BY title, onem_rank DESC NULLS LAST
-                    ) deduped
-                    ORDER BY (
-                        ((onem_rank - 2.0) / 14.0) * 0.6 +
-                        (EXTRACT(EPOCH FROM ilk_cekilme_tarihi) / EXTRACT(EPOCH FROM NOW())) * 0.4
-                    ) DESC NULLS LAST
-                    LIMIT %s
-                """, (top_k,))
+            for interval in ("24 hours", "48 hours"):
+                if category:
+                    cursor.execute(f"""
+                        SELECT article_id, article_url, title, full_text, onem_rank, ilk_cekilme_tarihi
+                        FROM (
+                            SELECT DISTINCT ON (title)
+                                article_id, article_url, title, full_text, onem_rank, ilk_cekilme_tarihi
+                            FROM news_articles
+                            WHERE ilk_cekilme_tarihi >= NOW() - INTERVAL '{interval}'
+                            {category_filter}
+                        ) deduped
+                        ORDER BY (
+                            ((onem_rank - 2.0) / 14.0) * 0.6 +
+                            (EXTRACT(EPOCH FROM ilk_cekilme_tarihi) / EXTRACT(EPOCH FROM NOW())) * 0.4
+                        ) DESC NULLS LAST
+                        LIMIT %s
+                    """, (category, top_k))
+                else:
+                    cursor.execute(f"""
+                        SELECT article_id, article_url, title, full_text, onem_rank, ilk_cekilme_tarihi
+                        FROM (
+                            SELECT DISTINCT ON (title)
+                                article_id, article_url, title, full_text, onem_rank, ilk_cekilme_tarihi
+                            FROM news_articles
+                            WHERE ilk_cekilme_tarihi >= NOW() - INTERVAL '{interval}'
+                        ) deduped
+                        ORDER BY (
+                            ((onem_rank - 2.0) / 14.0) * 0.6 +
+                            (EXTRACT(EPOCH FROM ilk_cekilme_tarihi) / EXTRACT(EPOCH FROM NOW())) * 0.4
+                        ) DESC NULLS LAST
+                        LIMIT %s
+                    """, (top_k,))
+
                 rows = cursor.fetchall()
+                if rows:
+                    break
 
             if not rows:
                 logger.info("[SEARCH] gundem: no results")
@@ -57,7 +62,7 @@ def search(question: str, embed_model, top_k: int = TOP_K, intent: str = "vector
 
             parts, source_urls = [], []
             for article_id, url, title, full_text, onem_rank, date in rows:
-                logger.info(f"[SEARCH] gundem: id={article_id} onem_rank={onem_rank} date={date} title={title!r}")
+                logger.info(f"[SEARCH] gundem: id={article_id} onem_rank={onem_rank} category={category} date={date} title={title!r}")
                 parts.append(f"[Kaynak: {url}]\n{title}\n\n{full_text}")
                 if url:
                     source_urls.append(url)
@@ -100,7 +105,6 @@ def search(question: str, embed_model, top_k: int = TOP_K, intent: str = "vector
     if not articles:
         return "", []
 
-    # Combined ranking: 60% vector score + 25% importance + 15% recency
     import time
     now_epoch = time.time()
 
@@ -109,7 +113,7 @@ def search(question: str, embed_model, top_k: int = TOP_K, intent: str = "vector
         vec = scores.get(article_id, 0)
         imp = ((onem_rank or 2) - 2.0) / 14.0
         rec = ilk_cekilme_tarihi.timestamp() / now_epoch if ilk_cekilme_tarihi else 0
-        return vec * 0.6 + imp * 0.25 + rec * 0.15
+        return vec * 0.6 + imp * 0.1 + rec * 0.3
 
     articles = sorted(articles, key=combined_score, reverse=True)
 

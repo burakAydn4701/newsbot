@@ -48,6 +48,37 @@ class ChatRequest(BaseModel):
 
 
 # ─────────────────────────────────────────────────────────
+# CATEGORY DETECTION
+# ─────────────────────────────────────────────────────────
+CATEGORY_IDS = {
+    "Spor":     "1160545",
+    "Ekonomi":  "770",
+    "Politika": "2404",
+    "Magazin":  "1164592",
+}
+
+def detect_gundem_category(question: str) -> str | None:
+    prompt = f"""Kullanıcının sorusu belirli bir ana kategori hakkında gündem mi istiyor?
+Sadece şu kategorilerden birini döndür: Spor, Ekonomi, Politika, Magazin
+Eğer genel gündem istiyorsa sadece "None" döndür. Başka hiçbir şey yazma.
+
+Soru: {question}
+
+Cevap:"""
+
+    try:
+        resp = anthropic.messages.create(
+            model=CLAUDE_MODEL_ID,
+            max_tokens=10,
+            temperature=0,
+            messages=[{"role": "user", "content": prompt}],
+        )
+        answer = resp.content[0].text.strip()
+        return CATEGORY_IDS.get(answer)
+    except:
+        return None
+
+# ─────────────────────────────────────────────────────────
 # INTENT CLASSIFIER
 # ─────────────────────────────────────────────────────────
 def classify_intent(history: list[Message]) -> str:
@@ -58,14 +89,18 @@ def classify_intent(history: list[Message]) -> str:
     if last_user_msg in greetings:
         return "greeting"
 
+    # Hardcoded gundem triggers — exact match or starts with only
     gundem_keywords = [
-        "gündem", "gundem", "önemli haberler", "son dakika", "bugün ne oldu",
-        "ne var ne yok", "haberler ne", "neler oldu", "gelişmeler ne",
-        "önemli gelişmeler", "son haberler", "bugünkü haberler"
+        "gündem nedir", "gündem ne", "genel gündem", "bugünkü gündem",
+        "son dakika", "bugün ne oldu", "ne var ne yok",
+        "önemli haberler", "son haberler", "bugünkü haberler", "neler oldu",
+        "spor gündem", "ekonomi gündem", "politika gündem", "magazin gündem",
+        "spor haberleri", "ekonomi haberleri", "politika haberleri", "magazin haberleri",
     ]
-    if any(kw in last_user_msg for kw in gundem_keywords):
+    if any(last_user_msg == kw or last_user_msg.startswith(kw) for kw in gundem_keywords):
         return "gundem"
 
+    # Only consider followup if there is a real prior assistant answer
     has_prior_answer = any(
         m.role == "assistant" and len(m.content.strip()) > 60
         for m in context_msgs[:-1]
@@ -141,11 +176,12 @@ Arama Sorgusu:"""
 # ─────────────────────────────────────────────────────────
 # SYSTEM PROMPT
 # ─────────────────────────────────────────────────────────
-def get_system_prompt(intent: str = "vector"):
+def get_system_prompt(intent: str = "vector", category: str = None):
     today = datetime.now().strftime("%d %B %Y, %A")
 
     if intent == "gundem":
-        task = "Sağlanan haberleri kullanarak bugünün önemli gelişmelerini kullanıcıya özetle."
+        scope = f"{category} " if category else ""
+        task = f"Sağlanan haberleri kullanarak bugünün önemli {scope}gelişmelerini kullanıcıya özetle."
     else:
         task = "Sağlanan haberleri kullanarak kullanıcının sorusunu yanıtla. Eğer haberler soruyla ilgisizse sadece şunu yaz: \"Bu konuda güncel bir haber bulamadım.\""
 
@@ -180,8 +216,11 @@ async def chat(req: ChatRequest):
         )
 
     # 2. Search
+    category = None
     if user_intent == "gundem":
-        news_context, source_urls = search("", embed_model, top_k=TOP_K, intent="gundem")
+        category = detect_gundem_category(last_question)
+        logger.info(f"[GUNDEM] category={category}")
+        news_context, source_urls = search("", embed_model, top_k=TOP_K, intent="gundem", category=category)
 
     elif user_intent == "followup":
         search_query = build_search_query(history)
@@ -197,7 +236,7 @@ async def chat(req: ChatRequest):
         messages.append({"role": msg.role, "content": msg.content})
     messages.append({"role": "user", "content": f"HABERLER:\n{news_context}\n\nSoru: {last_question}"})
 
-    # 4. Stream response — inside chat() to close over messages and source_urls
+    # 4. Stream response
     def stream_with_sources():
         full_response = ""
 
@@ -206,7 +245,7 @@ async def chat(req: ChatRequest):
                 model=CLAUDE_MODEL_ID,
                 max_tokens=512,
                 temperature=0.1,
-                system=get_system_prompt(intent=user_intent),
+                system=get_system_prompt(intent=user_intent, category=category),
                 messages=messages,
             ) as stream:
                 for event in stream:
@@ -217,6 +256,7 @@ async def chat(req: ChatRequest):
 
             logger.info(json.dumps({
                 "intent": user_intent,
+                "category": category,
                 "question": last_question,
                 "answer": full_response,
                 "sources": source_urls
